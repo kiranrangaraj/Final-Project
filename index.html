@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Used Car Price Predictor</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/machine-learning.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Multi - v2.1.0
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html"></a>Used Car Price Predictor</a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">Process</a></li>
+          <li><a href="#services">Visualizations</a></li>
+          <li><a href="#conclusions">Conclusions</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/background1.jpeg)">
+          <div class="carousel-container">
+            <div class="container">
+              
+              <h2 class="animate__animated animate__fadeInDown">Car Buying in the Digital Era<span></span></h2>
+              <p class="animate__animated animate__fadeInUp">2020 created huge shifts in consumer habits and behaviors - from the way we shop, work,
+                eat, and even learn. With the world becoming more digital, contactless business models have profoundly impacted the automotive 
+                industry. An all-time high 72% of car buyers report a satisfying car buying process despite only visiting two car dealerships on 
+                average. Not only are buyers spending less time at dealerships, they are also benefitting from more efficient digital 
+                retailing programs.</p>
+              <p class="animate__animated animate__fadeInUp">New car costs continue to increase despite a growing population of customers who 
+                are unable to afford them. With the wealth of information being offered to potential buyers online, the used car market has grown 
+                significantly larger than the new car market. In 2019, 40 million used cars were sold as compared to 17 million new vehicles. While 
+                pre-owned vehicles tend to come with much lower price tags, there's more to consider when choosing them, which makes it difficult to
+                accurately predict what one should be paying.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/background2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">The Problem</h2> 
+              <p class="animate__animated animate__fadeInUp">The prices of new cars in the industry are fixed by manufacturers with some additional costs 
+                incurred by the government in the form of taxes. So, customers buying a new car can be assured of the money they invest to be worthy.</p> 
+              <p class="animate__animated animate__fadeInUp">Estimating the true market value of a used vehicle however, involves the daunting task of 
+                weighing so many different factors. This presents the need for an accurate price prediction system. Current websites that offer this 
+                service may not comprehensively consider the actual market, which leaves buyers in a compromised position. An accurate price predictor 
+                could offer buyers this confidence, while benefitting the legitimacy of pricing websites, and assisting both used car dealers and private party 
+                sellers in competitively pricing vehicles in order to quickly sell them with less hassle.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/background3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Applying Machine Learning to Find True Value</h2>
+              <p class="animate__animated animate__fadeInUp">Using the wealth of car sales data already out there, Machine Learning (ML) algorithms can build a 
+                model in order to make predictions without being explicitly programmed to do so. In this study, we applied eight different ML models to a 
+                Craigslist.org data set containing almost a half-million used car listings to create a price prediction model of 91% accuracy.
+              <p class="animate__animated animate__fadeInUp">Why Craiglist? Craigslist offers the largest collection of used vehicles for sale. Its 
+                popularity amongst private party sellers means the best deals in the market due to the exclusion of dealership fees that would otherwise 
+                increase prices. This popularity has forced dealerships to also utilize its listing services, thus creating a very competitive niche market.</p>
+              <p class="animate__animated animate__fadeInUp">ML algorithms build a model based on sample data, known as "training data", 
+                in order to make predictions or decisions. Here, 90% of the data set was split for training and the remaining 10% was used for testing the 
+                chosen algorithm. By using an extremely large data set, the algorithm becomes more experienced in how each of 16 factors influences used car 
+                prices.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg2">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>About This Project</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>The <a href=https://www.kaggle.com/austinreese/craigslist-carstrucks-data#craigslistVehicles.csv>data set</a> was obtained from a 
+              non-profit Kaggle project that periodically scrapes Craigslist for every used vehicle entry within the United States. It is then uploaded 
+              to Kaggle and contains most all relevant information that Craigslist provides on car sales including columns like 'price', 'odometer',
+              'year', 'model', 'manufacturer', 'condition', 'title status', 'latitude/longitude', and 17 other categories. Data scraping was most recently 
+              performed in January 2021. In total, the original .csv file contains 458,213 vehicle listings.</p><br> 
+            <div class="container text-center">
+              <img src="assets/img/DataCleanUp/original-data-columns.png" width="415"/>
+            </div>    
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>The following steps were then performed and shall be discussed:</p>
+            <ul>
+              <li><i class="icofont-mop"></i> Data Cleaning (Identifying Null Values, Filling-In Missing Values & Removing Outliers)
+                Using <a href="https://pandas.pydata.org/">pandas</a>, <a href="https://numpy.org/">NumPy</a>, & <a href="https://seaborn.pydata.org/">
+                seaborn</a></li>
+              <li><i class="icofont-repair"></i> Data Preprocessing (Standardization or Normalization) & Splitting</li>
+              <li><i class="ri-robot-fill"></i> Training & Testing the Data Using 8 Algorithm Models Obtained from <a href="
+                https://scikit-learn.org/stable">scikit-learn</a>, <a href="https://www.scikit-yb.org/en/latest/api/regressor/residuals.html">
+                yellowbrick</a>, & <a href=https://xgboost.readthedocs.io/en/latest/get_started.html>XGBoost</a> ML Libraries in <a href="
+                https://www.python.org/">python</a></li>
+              <li><i class="ri-checkbox-fill"></i> Comparison of Each ML Models Performance </li>
+              <li><i class="ri-bar-chart-fill"></i> Raw Data Visual Analysis Using <a href="https://matplotlib.org/">matplotlib</a></li>
+              <li><i class="icofont-chart-flow-1"></i> Conclusions - Determination of Accurate Price Prediction Model</li>
+
+            </ul>
+            <p>Since this study concerns price predictions, it's important to consider how price distributions in regression models are skewed
+              right, as shown in the distplot diagram of the actual data set below. For any fixed value of X (independent / predictor variable), the Y value 
+              (price / dependent / target variable) prediction will be inaccurately higher than it actually is and should be corrected for. To solve this problem, 
+              a log transformation is used to scale the price, thereby helping to generate more accurate predictions of the actual target values. For this reason, 
+              evaluations of ML model accuracies are calculated based on <a href="https://www.kaggle.com/carlolepelaars/understanding-the-metric-rmsle">Root Mean 
+              Squared Log Error (RMSLE)</a> and the <a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">Coefficient of Determination (R²)</a>.</p>
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/Insight-Dist-Plot.png" width="410"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Data Preparation</h2>
+          <p>Cleaning and Preprocessing</p>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <h4>Irrelevant Feature Removal</h4>
+          </div>
+          <div class="col-lg-9 text-center">
+            <p>Removal of 'url', 'region_url', 'vin', 'image_url', 'description', 'county', and 'state' columns</p>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3">
+            <h4>Missing Values Filled-In</h4>
+          </div>
+          <div class="col-lg-9 text-center">
+            <p>Missing values for each respective column are viewed below.</p> 
+            <div class="container text-center">
+              <img src="assets/img/DataCleanUp/null-values.png" width="200"/>
+              <img src="assets/img/DataCleanUp/nullvalues.png" width="400"/>
+            </div>
+            <div class="text-justify">
+              <p>These values were filled using variants of the <a href=https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html>
+                IterativeImputer</a> method that estimates each feature from all the others according to different regression models. Mean and median in addition 
+                to 4 of these estimators were compared for the purpose of missing feature imputation. The models include 'BayesianRidge', which is based on 
+                regularized linear regression, 'DecisionTreeRegressor', which accounts for non-linear regression, 'ExtraTreesRegressor', which effectively imputes
+                missing values in mixed-type data, that may involve continuous and/or categorical data including complex interactions and nonlinear relations. And 
+                finally 'KNeighborsRegressor', a nearest neighbor imputation method. Effectiveness is decided based upon the least amount of MSE. From the figure 
+                below, 'BayesianRidge' provides the least error thus it was chosen to fill missing values.</p>
+            </div>  
+            <div class="container text-center">
+              <img src="assets/img/DataCleanUp/different-imputations-method.png" width="800"/>
+            </div>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3">
+            <h4>Outlier Removal</h4>
+          </div>
+          <div class="col-lg-9 text-justify">
+            <p>InterQuartile Range for 'price', 'odometer', and 'year' were visualized using the boxplots seen below. Any value considered more extreme than 
+              1 &frac12 times the interquartile range above the third quartile or below the first quartile were deemed as outliers and eliminated. The box plots 
+              show that for prices, any listing amount whose log is 1 &frac12 times below 6.55 or above 11.55 are considered outliers. The box plot for odometer 
+              visually does not provide the interquartile range due to extreme outliers for this feature. These values were calculated and eliminated. The boxplot 
+              for year identifies 1996 as being the Q1 boundary for older vehicles. Since no vehicles newer than 2020/2021 exist, only extremely old vehicles 
+              could act as outliers for this variable.</p> 
+            <div class="container text-center">
+              <img src="assets/img/DataCleanUp/graph-boxplot-price.jpg"  width="380"/>
+              <img src="assets/img/DataCleanUp/graph-boxplot-odometer.jpg"  width="380"/>
+            </div>
+            <div class="container text-center">
+              <img src="assets/img/DataCleanUp/graph-boxplot-histogram-year.jpg" width="700"/>
+            </div>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3">
+            <h4>Cleaned Data Set</h4>
+          </div>
+          <div class="col-lg-9 text-justify">
+            <p>We began with 458,213 rows and 25 columns of data and removed 62,231 rows and 7 columns to end up with 395,982 rows and 18 columns, 16
+              columns of which were utilized by ML algorithms.</p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3">
+            <h4>Label Encoding</h4>
+          </div>
+          <div class="col-lg-9 text-justify">
+            <p>Our data set contains 12 categorical variables and 4 numerical variables, excluding the price column. In order to apply the ML models,
+              the categorical variables needed to be tranformed into numerical variables. The scikit-learn library <a href=
+              "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html">LabelEncoder</a> was applied for this purpose.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3">
+            <h4>Normalization</h4>
+          </div>
+          <div class="col-lg-9 text-justify">
+            <p>Since the data set is not normally distributed, all of the features have different ranges. Feature scaling is essential for ML
+              algorithms that calculate distances between data. If not to scale, the feature with a higher value range starts dominating when calculating 
+              distances. Therefore, the range of all features should be normalized so that each feature contributes approximately proportionately to the 
+              final distance. The scikit-learn library
+              <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html">MinMaxScalar</a> was applied for this process.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3">
+            <h4>Split the Data</h4>
+          </div>
+          <div class="col-lg-9 text-justify">
+            <p>During this step, 90% of the data was split as training data and remaining 10% used as test data.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End F.A.Q Item-->
+
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Machine Learning</h2>
+          <p>Training and Testing the Data</p>
+        </div>
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">Linear Regression</a></h4>
+            <p><b>MSLE : 0.0027</b></p>
+            <p><b>Root MSLE : 0.0523</b></p>
+            <p><b>R² Score : 0.6316 or 63.16%</b></p>
+            <br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Linear-Regression-Feature-Importance.png" width="450"/>
+            </div>
+          </div>
+          <div class="col-lg-7 text-justify">
+            <p>In statistics, linear regression is a linear approach to modeling the relationship between a scalar response (dependent variable) 
+              and one or more explanatory variables (independent variables). In linear regression, the relationships are modeled using linear predictor 
+              functions whose unknown model parameters are estimated from the data. Such models are called linear models.</p>
+            <br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Linear-Regression-Performance.png" width="670"/>
+            </div>
+          </div>
+          <div class="col-lg-12 text-justify">
+            <br><p>The performance of linear regression is determined by the differences between the actual values and predicted values. While
+              the model presents a seemingly good fit, it only surmounted an R² score of 63%, thus other models may provide better prediction results. 
+              Additionally, linear regression considers 'year', 'odometer', 'fuel', and 'cylinders' to be the most important variables in predicting
+              price as viewed in the feature importance graph.</p>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ridge_regression.html">Ridge Regression</a></h4>
+            <p><b>MSLE : 0.0027</b></p>
+            <p><b>Root MSLE : 0.0524</b></p>
+            <p><b>R² Score : 0.6316 or 63.16%</b></p>
+            <br><br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Ridge-Regression-Feature-Importance.png" width="450"/>
+            </div>
+          </div>
+          <div class="col-lg-7 text-justify">
+            <p>Ridge Regression is a technique used for analyzing a multiple regression model that suffers from multicollinearity, or when more 
+              than two explanatory variables are highly linearly related. This commonly occurs in models with a large number of parameters. Ridge 
+              regression regularizes all parameters equally and provides improved efficiency in parameter estimation problems in exchange for a 
+              tolerable amount of bias. This is suited for multicollinearity, where ordinary least squares provide unbiased regression coefficients 
+              (maximum likelihood estimates as observed in the data set).</p> 
+            <br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Ridge-Alpha-Error.png" width="435"/>
+            </div>
+          </div>
+          <div class="col-lg-12 text-justify">
+            <br><p>A yellowbrick library by <a href="https://www.scikit-yb.org/en/latest/api/regressor/alphas.html">Alpha Selection</a> which uses 
+              cross validation found the best alpha value (20.336) to fit the data set. The way our variables interact to predict used car price 
+              was not suited to a Ridge model analysis which also gave a low R² score of 63%.</p>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html">Lasso</a></h4>
+            <p><b>MSLE : 0.0027</b></p>
+            <p><b>Root MSLE : 0.0524</b></p>
+            <p><b>R² Score : 0.6316 or 63.16%</b></p>
+          </div>
+          <div class="col-lg-8 text-justify">
+            <p>Lasso (least absolute shrinkage and selection operator) is a regression analysis method that performs both variable selection and 
+              regularization in order to enhance the prediction accuracy and interpretability of the resulting statistical model. It was originally 
+              formulated for linear regression models though Lasso regularization is easily extended to other statistical models including 
+              generalized linear models, generalized estimating equations, proportional hazards models, and M-estimators. Lasso’s ability to 
+              perform subset selection relies on the form of the constraint and has a variety of interpretations in terms of geometry, Bayesian 
+              statistics and convex analysis.</p>
+          </div>
+          <div class="col-lg-12 text-justify">
+            <p>The Lasso model was not suited to our data set as indicated by a low R² score. After conducting our predictive analysis using three
+              linear regression models, it appears that price is not impacted by any variable or variables in a clear linear fashion. We move on 
+              to other types of ML models for testing.</p>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html">K Neighbors Regressor</a></h4>
+            <p><b>MSLE : 0.0015</b></p>
+            <p><b>Root MSLE : 0.0392</b></p>
+            <p><b>R² Score : 0.8011 or 80.11%</b></p>
+            <br><br><br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/KNN-RMSLE.png" width="425"/>
+            </div>  
+          </div>
+          <div class="col-lg-7 text-justify">
+            <p>The k-nearest neighbors algorithm (k-NN) is a non-parametric classification method in which the input consists of the k closest training examples 
+              in the dat set. k-NN is a type of instance-based learning, or <a href="https://en.wikipedia.org/wiki/Lazy_learning">lazy learning</a>, where the 
+              function is only approximated locally and all computation is deferred until function evaluation. In other words, it manipulates the training data 
+              and classifies the new test data based on distance metrics. The quality of the predictions depends on the distance measure, which if the features 
+              represent different physical units or come in vastly different scales then normalizing the training data can improve the models accuracy 
+              dramatically.</p>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/KNN-Error-Plot.jpg" width="570"/>
+            </div>
+          </div>
+          <div class="col-lg-12 text-justify">
+            <br><p>From both of the above figures, it can be observed that RMSLE value is at lowest when k is four. On the other hand, there is no signifcant 
+              difference between RMSLE values for when k is three through six. By choosing the lowest MSLE occurrence, the data set is trained with more consistency
+              using neighbors<sub>N</sub> is 5 and a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.euclidean_distances.html">
+              'euclidean distance'</a> metric. Since we performed normalization on our data set beforehand, the algorithm was able to achieve an 80% R² score,
+              which is a considerably higher accuracy rating for used car price predictions than what was produced by the linear regression models.</p>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html">Random Forest Regressor</a></h4>
+            <p><b>MSLE : 0.0008</b></p>
+            <p><b>Root MSLE : 0.0284</b></p>
+            <p><b>R² Score : 0.8994 or 89.94%</b></p>
+            <br><br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Random-Forest-Variables-Importances.jpg" width="350"/>
+            </div>
+          </div>
+          <div class="col-lg-7 text-justify">
+            <p>A <a href="https://scikit-learn.org/stable/modules/ensemble.html#forest">Random Forest</a> is a meta estimator that fits a number of classifying 
+              decision trees on various sub-samples of the data set and uses averaging to improve the predictive accuracy and control over-fitting. The 
+              sub-sample size is controlled with a max-samples parameter if by default (bootstrap=True), otherwise the whole dataset is used to build each tree. 
+              In random forests, each tree in the ensemble is built from a sample drawn with replacement (i.e., a bootstrap sample) from the training set. 
+              Furthermore, when splitting each node during the construction of a tree, the best split is found either from all input features or a random 
+              subset of size max features. Randomness helps to prevent over-fitting and decreases the variance of the forest estimator. </p>
+            <br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Random-Forest-Performance.png" width="625"/>
+            </div>
+          </div>
+          <div class="col-lg-12 text-justify">
+            <br><p>In our model, 180 trees were created with max features of 0.5. In general, the more the trees, the better the results. Random Forest produced
+              an R² score of 90%. The variables importance diagram above shows that 'year' and 'odometer' are the variables with the highest degree of predictive
+              usefulness out of all the variables. The performance diagram above shows that actual versus predicted MSLE's were nearly identical for all except 
+              3 of the 25 instances.</p>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingRegressor.html">Bagging Regressor</a></h4>
+            <p><b>MSLE : 0.0015</b></p>
+            <p><b>Root MSLE : 0.0383</b></p>
+            <p><b>R² Score : 0.8124 or 81.24%</b></p>
+          </div>
+          <div class="col-lg-7 text-justify">
+            <p>A Bagging Regressor is an ensemble meta-estimator that fits base regressors each on random subsets of the original data set and then aggregates 
+              their individual predictions (either by voting or by averaging) to form a final prediction. Such a meta-estimator can typically be used as a way 
+              to reduce the variance of a black-box estimator (e.g., a decision tree), by introducing randomization into its construction procedure and then 
+              making an ensemble out of it.</p>
+            </p>
+          </div>
+          <div class="col-lg-12 text-justify">
+            <br><p>In our model, DecisionTreeRegressor is used as the estimator with max depth of 20, which creates 50 decision trees that results in an R² score
+              of 81%. Despite its complexity, the performance of Random Forest is much better than Bagging Regressor. The fundamental difference between 
+              these two ML models is that in Random Forests, only a subset of features are selected at random out of the total and the best split feature from 
+              the subset is used to split each node in a tree, unlike in bagging where all features are considered for splitting a node.
+            </p>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostRegressor.html">AdaBoost Regressor</a></h4>
+            <p><b>MSLE : 0.0009</b></p>
+            <p><b>Root MSLE : 0.0295</b></p>
+            <p><b>R² Score : 0.8891 or 88.91%</b></p>
+            <br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Adaboost-Features-Importance2.jpg" width="300"/>
+            </div>
+          </div>
+          <div class="col-lg-7 text-center">
+            <div class="container text-justify">
+            <br><p>The core principle of AdaBoost is to fit a sequence of weak learners (i.e., models that are only slightly better than random guessing, 
+              such as small decision trees) on repeatedly modified versions of the data. The predictions from all of them are then combined through a 
+              weighted majority vote (or sum) to produce the final prediction. The data modifications at each so-called boosting iteration consist of 
+              applying weights w<sub>1</sub>, w<sub>2</sub>, ..., w<sub>N</sub> to each of the training samples. Initially, those weights are all set 
+              to w<sub>i</sub> = 1/N, so that the first step simply trains a weak learner on the original data. For each successive iteration, the sample 
+              weights are individually modified and the learning algorithm is reapplied to the reweighted data.</p>
+            <p>At a given step, those training examples that were incorrectly predicted by the boosted model induced at the previous step have their weights 
+              increased, whereas the weights are decreased for those that were predicted correctly. As iterations proceed, examples that are difficult to 
+              predict receive ever-increasing influence. Each subsequent weak learner is thereby forced to concentrate on the examples that are missed by 
+              the previous ones in the sequence.</p>
+            <p>In our model, the <a href="
+              https://scikit-learn.org/stable/auto_examples/ensemble/plot_adaboost_regression.html#sphx-glr-auto-examples-ensemble-plot-adaboost-regression-py"
+              >Decision Tree Regressor</a> is used as an estimator with a max depth of 24, 200 trees, and a learning rate of 0.6. This produced a strong R² 
+              score of 89%. The feaures importance bar plot shows how all variables factor into used vehicle price, though it is most influenced by 'year', 
+              'odometer', 'model', and 'lat/long'.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="icofont-robot-face"></i>
+            <h4><a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a></h4>
+            <p><b>MSLE : 0.0007</b></p>
+            <p><b>Root MSLE : 0.0260</b></p>
+            <p><b>R² Score : 0.9146 or 91.46%</b></p>
+            <br><br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/XGBoost-Features-Importance.jpg" width="370"/>
+            </div>
+          </div>
+          <div class="col-lg-7 text-justify">
+            <p>XGBoost is an <a href="https://en.wikipedia.org/wiki/Ensemble_learning">ensemble learning</a> method that is a specific implementation of the 
+              Gradient Boosted method which uses more accurate approximations to find the best tree model. Sometimes, it may not be sufficient to rely upon 
+              the results of just one machine learning model. Ensemble learning offers a systematic solution to combine the predictive power of multiple 
+              learners. The resultant is a single model which gives the aggregated output from several models. The models that form the ensemble, also known 
+              as base learners, could be either from the same learning algorithm or different</p>
+            <br>
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/XGBoost-Performance.png" width="580"/>
+            </div>
+          </div>
+          <div class="col-lg-12 text-justify">
+            <br><p>learning algorithms. Bagging (previously discussed) and boosting are two widely used ensemble learners. Though these two techniques 
+              can be used with several statistical models, the most predominant usage has been with decision trees. XGBoost employs scalability to drive 
+              fast learning through parallel and distributed computed, in addition to efficient memory usage. In order to fit the data set to the model, 
+              parameters were adjusted to provide cross validation of max depth 24, 200 decision trees (estimators) and a learning rate of 0.4.</p>  
+            <p>Learning Rate: The most important hyperparameter when configuring a neural network, which controls how much to change the 
+                model in response to the estimated error each time the model weights are updated. Choosing the learning rate is challenging as a value 
+                too small may result in a long training process that could get stuck, whereas a value too large may result in learning a sub-optimal 
+                set of weights too fast or an unstable training process.</p>
+            <p>n_estimators: This is the number of trees you want to build before taking the maximum voting or averages of predictions. A higher number 
+                of trees give you better performance with the drawback being longer run times.</p>
+            <p>The algorithm produced the highest R² score at 91%. The performance chart above displays the great accuracy of the prediction model.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End F.A.Q Item-->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Comparison</h2>
+          <p>Machine Learning Model Performance</p>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-12"> 
+            <div class="container text-center">
+              <img src="assets/img/MachineLearning/Overall-Performance.jpg" width="1050"/>
+              <img src="assets/img/MachineLearning/overall-errors.png" width="1050"/>
+            </div>
+            <div class="text-justify">
+              <br><p>Of the eight different ML models we explored, three produced prediction accuracies of 90% which is a substantial result. These algorithms were 
+                RandomForestRegressor, AdaBoostRegressor, and XGBoost. By performing different models, we were able to learn more about the data set and the relative 
+                importance of the variables. As each ML algorithm was applied, information regarding the four statistical measures observed in the table above was gathered 
+                in order to assess the suitability of the ML model in meeting our studies objective of accurately predicting used car prices.</p>
+              <p>The first three models were based in linear regression and were all found to be unsuitable for our prediction needs based on their poor MSLE, Root MSLE 
+                and R² scores. The relative importance of the features/variables generated by these early models provided useful insights however, since they indicated 
+                that several factors were influencing used car prices. These factors were (decreasing order of importance) 'year', 'odometer', 'fuel', and 'cylinders'. 
+                As we performed more learning models on the data, a few tendencies became apparent in that relative importance of features were always found to be most 
+                for both 'odometer' and 'year', and then a handful of others.</p> 
+              <p>Moving onto more complex algorithms that allowed for much larger decision trees and depth parameters is when higher accuracies of price predictions
+                were achieved. Our data set contained 12 categorical variables and 4 numerical variables, which despite being encoded and scaled prior to utilization by 
+                the ML models, presented the need for a model that could be sensitive to the very broad importance value range for many different variables.</p> 
+              <p>The most suited algorithm was found to be the XGBoost ensemble-based ML model. The advantage of the XGBoost model is its scalable and accurate implementation 
+                of gradient boosting techniques and several advanced features for model tuning, computing environments and algorithm enhancement. XGBoody can perform 
+                the three main forms of gradient boosting (Gradient Boosting (GB), Stochastic GB and Regularized GB) and is robust enough to support fine tuning and 
+                addition of regularization parameters. The 91% accuracy model established here provides a jumping off point for further/future exploration. </p>
+            </div>  
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Visualizations</h2>
+          <p>Raw Data Visual Analysis</p>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-12"> 
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/Insight-Pair-Plot.png" width="600"/>
+            </div>
+            <div class="text-justify">
+              <p>The pair plots of vehicle year, price, and odometer are shown above. Correlations between these variables are visually apparent from the 
+                distribution of the scatter plots. Firstly, the pricing of vehicles tends to increase the newer they are. Secondly, the higher the odometer
+                of a vehicle, the older the vehicle tends to be. A correlation between pricing and odometer is less noticeable though it still appears that
+                prices tend to increase in vehicles with lower mileage. These three variable interactions confirm already well-established concepts of car
+                value.</p>
+            </div>
+            <div class="text-center">
+              <p>The following six bar plots performed on the raw data provide a means to visually consider any possible relationships between the different variables and
+                used car prices.</p>
+            </div>   
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig1.jpg" width="1050"/>
+            </div>  
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig2.png" width="1050"/>
+            </div>  
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig3.jpg" width="800"/>
+            </div>
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig4.jpg" width="800"/>
+            </div>  
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig5.jpg" width="900"/>
+            </div>
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig6.jpg" width="800"/>
+            </div>
+            <div class="text-center">
+              <p>Six additional bar plots regarding vehicle count verses the different variables provides an idea of the makeup of the data set based off 
+                of their distributions.</p>
+            </div>
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig7.jpg" width="800"/>
+            </div>  
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig8.png" width="350"/>
+            </div>  
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig9.png" width="650"/>
+            </div>
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig10.jpg" width="675"/>
+            </div>  
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig11.jpg" width="675"/>
+            </div>
+            <div class="container text-center">
+              <img src="assets/img/DataVisualizations/fig12.jpg" width="1000"/> 
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- End F.A.Q Item-->
+    
+    <!--Conclusion Section-->    
+    <section id="conclusions" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>and in</h2>
+          <p>Conclusion</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-10">
+            <p>The process applied here provides great potential in becoming an actual price prediction application that can be used by the public.
+              Although the complex manner in which the different features impact used car pricing is constantly in flux, certain areas of importance were
+              uncovered through exploration with eight distinct ML models. A 91% accuracy rating is substantial theoretically, though differences between
+              actual versus predicted prices due to error with this model could amount to hundreds or even thousands of dollars. For buyers in the market,
+              that would defeat the purpose of the prediction model. Ideally, a near 100% accuracy rating should be sought after to achieve a true "working" 
+              model.</p>
+            <p>Machine learning appears to have the potential to change relationships between producers and consumers in positive ways. In this application,
+              we have explored the potential for it to assist consumers in navigating the used car market. A highly accurate machine learning price prediction
+              model could potentially revolutionize the used automotive industry by giving buyers the power to locate the most reasonable deal. Consequently,
+              sellers, both private party and dealer, will have to adjust their pricing schemes in order to accurately represent true market values. This may 
+              attract an even higher percentage of buyers to the used car market and potentially impact the new car market in turn. Such a predicament would
+              indeed be quite amusing.</p>
+            <p>In order to continue building towards an actual deployable model, more used car data from other sources besides Craiglist should be obtained and
+              incorporated into the ML model. These sources will have to be varied in order to comprehensively capture the used car sales market and will
+              include other major online used car platforms, as well as dealerships in order to represent the portion of used car sales that are not transacted
+              online. Obtaining data on local private party sales will be inconsistent and difficult to locate. A much larger data set would allow for more 
+              robust price predictions by the ML model. Although 16 different features, both numerical and categorical, were applied here, potentially more 
+              features could be included due to the broad importance value range for many different variables when considering used car value.</p>
+            <p>Additionally, scrutinizing certain aspects of the data cleaning and preprocessing could lead to more accurate methods of filling in missing values 
+              or scaling the data, which could provide a data set that the ML model optimally uses for predictive analysis. Immediate next steps include
+              loading the current prediction model into a Heroku-hosted web application.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Behind the Scenes</h2>
+          <p>Coding Snippets</p>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code1.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code2.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code3.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code4.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code5.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code6.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code7.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code8.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code9.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code10.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code11.png">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img class="rounded w-50" src="assets/img/CodeSnippets/code12.png">
+              </div>
+            </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+   <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>The Researcher</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4">
+                <div class="member-info-content">
+                  <h4>Kiran Rangaraj</h4>
+                  <span>Aspiring Data Analyst / Former Biochemist </span>
+                </div>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/kiran-rangaraj-38286718a/"><i class="icofont-linkedin"></i></a>
+                  <a href="https://github.com/kiranrangaraj"><i class="icofont-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          
+
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
+        <h3>Resources:</h3>
+        <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+        <p>Data source information: <a href="https://www.kaggle.com/austinreese/craigslist-carstrucks-data#craigslistVehicles.csv">Kaggle</a></p>
+        <p>Additional References: <a href="https://www.analyticsvidhya.com/blog/2018/09/an-end-to-end-guide-to-understand-the-math-behind-xgboost/">XGBoost</a></p>
+        <p>Image 1 source: <a href="https://compote.slate.com/images/d471261e-746a-4a1d-8f22-aa87bddaa025.jpeg?width=1600&rect=780x520&offset=0x0">Click Here</a></p>
+        <p>Image 2 source: <a href="https://www.istockphoto.com/photo/used-car-dealership-gm172662668-5488785">Click Here</a></p>
+        <p>Image 3 source: <a href="https://www.wardsauto.com/sites/wardsauto.com/files/styles/article_featured_retina/public/used%20car%20lot_1.jpg?itok=a6f7YM4S">Click Here</a></p>
+      </div>
+      
+
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
