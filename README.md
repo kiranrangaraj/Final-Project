@@ -27,7 +27,9 @@ ML algorithms build a model based on sample data, known as "training data", in o
 
 ## Process ##
 The data set was obtained from a non-profit Kaggle project that periodically scrapes Craigslist for every used vehicle entry within the United States. It is then uploaded to Kaggle and contains most all relevant information that Craigslist provides on car sales including columns like 'price', 'odometer', 'year', 'model', 'manufacturer', 'condition', 'title status', 'latitude/longitude', and 17 other categories. Data scraping was most recently performed in January 2021. In total, the original .csv file contains 458,213 vehicle listings.
-<img src="assets/img/DataCleanUp/original-data-columns.png" width="400">
+<p align="center">
+  <img src="assets/img/DataCleanUp/original-data-columns.png" width="400">
+</p>
 
 The following steps were performed on the data set:
 * Data Cleaning (Identifying Null Values, Filling-In Missing Values & Removing Outliers) Using pandas, NumPy, & seaborn
@@ -35,7 +37,10 @@ The following steps were performed on the data set:
 * Training & Testing the Data Using 8 Algorithm Models Obtained from scikit-learn, yellowbrick, & XGBoost ML Libraries in python
 
 Since this study concerns price predictions, it's important to consider how price distributions in regression models are skewed right, as shown in the distplot diagram of the actual data set below. For any fixed value of X (independent / predictor variable), the Y value (price / dependent / target variable) prediction will be inaccurately higher than it actually is and should be corrected for. To solve this problem, a log transformation is used to scale the price, thereby helping to generate more accurate predictions of the actual target values. For this reason, evaluations of ML model accuracies are calculated based on Root Mean Squared Log Error (RMSLE) and the Coefficient of Determination (R²).
-<img src="assets/img/DataVisualizations/Insight-Dist-Plot.png" width="400">
+
+<p align="center">
+  <img src="assets/img/DataVisualizations/Insight-Dist-Plot.png" width="400">
+</p>
 
 ---
 
