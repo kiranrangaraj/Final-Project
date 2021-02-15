@@ -1,6 +1,7 @@
 # Final-Project   Used Car Price Predictor Using Machine Learning
-## Github Page Link: https://kiranrangaraj.github.io/Final-Project/
 ![website](assets/img/website.png)
+## Github Page Link: https://kiranrangaraj.github.io/Final-Project/
+---
 
 ## SUMMARY ##
 * *Overview* 
@@ -8,7 +9,8 @@
 * *Comparison - Machine Learning Model Performance* 
 * *Conclusions* 
 * *Sources* 
-* *Technologies Used* 
+* *Technologies Used*
+---
 
 ## Overview ##
 The digital era has created a shift in the automotive industry towards contactless business models. This has allowed for the used car market to grow significantly larger than the new car market, primarily due to the wealth of information being offered to potential buyers online. In 2019, 40 million used cars were sold as compared to 17 million new vehicles. While pre-owned vehicles tend to come with much lower price tags, there's more to consider when choosing them, which makes it difficult to accurately predict what one should be paying.
@@ -21,6 +23,8 @@ Why Craiglist? Craigslist offers the largest collection of used vehicles for sal
 
 ML algorithms build a model based on sample data, known as "training data", in order to make predictions or decisions. Here, 90% of the data set was split for training and the remaining 10% was used for testing the chosen algorithm. By using an extremely large data set, the algorithm becomes more experienced in how each of 16 factors influences used car prices.
 
+---
+
 ## Process ##
 The data set was obtained from a non-profit Kaggle project that periodically scrapes Craigslist for every used vehicle entry within the United States. It is then uploaded to Kaggle and contains most all relevant information that Craigslist provides on car sales including columns like 'price', 'odometer', 'year', 'model', 'manufacturer', 'condition', 'title status', 'latitude/longitude', and 17 other categories. Data scraping was most recently performed in January 2021. In total, the original .csv file contains 458,213 vehicle listings.
 
@@ -28,6 +32,8 @@ The following steps were then performed on the data set:
 * Data Cleaning (Identifying Null Values, Filling-In Missing Values & Removing Outliers) Using pandas, NumPy, & seaborn
 * Data Preprocessing (Standardization or Normalization) & Splitting
 * Training & Testing the Data Using 8 Algorithm Models Obtained from scikit-learn, yellowbrick, & XGBoost ML Libraries in python
+
+---
 
 ## Comparison - Machine Learning Model Performance ##
 ![Overall-Performance](assets/img/MachineLearning/Overall-Performance.jpg)
@@ -41,6 +47,8 @@ Moving onto more complex algorithms that allowed for much larger decision trees 
 
 The most suited algorithm was found to be the XGBoost ensemble-based ML model. The advantage of the XGBoost model is its scalable and accurate implementation of gradient boosting techniques and several advanced features for model tuning, computing environments and algorithm enhancement. XGBoody can perform the three main forms of gradient boosting (Gradient Boosting (GB), Stochastic GB and Regularized GB) and is robust enough to support fine tuning and addition of regularization parameters. The 91% accuracy model established here provides a jumping off point for further/future exploration.
 
+---
+
 ## Conclusions ##
 The process applied here provides great potential in becoming an actual price prediction application that can be used by the public. Although the complex manner in which the different features impact used car pricing is constantly in flux, certain areas of importance were uncovered through exploration with eight distinct ML models. A 91% accuracy rating is substantial theoretically, though differences between actual versus predicted prices due to error with this model could amount to hundreds or even thousands of dollars. For buyers in the market, that would defeat the purpose of the prediction model. Ideally, a near 100% accuracy rating should be sought after to achieve a true "working" model.
 
@@ -49,6 +57,8 @@ Machine learning appears to have the potential to change relationships between p
 In order to continue building towards an actual deployable model, more used car data from other sources besides Craiglist should be obtained and incorporated into the ML model. These sources will have to be varied in order to comprehensively capture the used car sales market and will include other major online used car platforms, as well as dealerships in order to represent the portion of used car sales that are not transacted online. Obtaining data on local private party sales will be inconsistent and difficult to locate. A much larger data set would allow for more robust price predictions by the ML model. Although 16 different features, both numerical and categorical, were applied here, potentially more features could be included due to the broad importance value range for many different variables when considering used car value.
 
 Additionally, scrutinizing certain aspects of the data cleaning and preprocessing could lead to more accurate methods of filling in missing values or scaling the data, which could provide a data set that the ML model optimally uses for predictive analysis. Immediate next steps include loading the current prediction model into a Heroku-hosted web application.
+
+---
 
 ## Sources ##
 ### Data Set Used:
@@ -65,6 +75,8 @@ Additionally, scrutinizing certain aspects of the data cleaning and preprocessin
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 
+---
+
 ## Technologies Used ##
 * Jupyter Notebook
 * PyCharm - Python IDE
@@ -75,6 +87,8 @@ Additionally, scrutinizing certain aspects of the data cleaning and preprocessin
 * Bootstrap
 * CSV file
 * Machine Learning Models - Linear Regression, Ridge, Lasso, KNN, Random Forest Regressor, Bagging Regressor, Adaboost Regressor, XGBoost Regressor
+
+---
 
 ## Author ##
 * Kiran Rangaraj - Data Analytics Bootcamp - Vanderbilt University - 2021
