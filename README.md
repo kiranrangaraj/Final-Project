@@ -27,8 +27,7 @@ ML algorithms build a model based on sample data, known as "training data", in o
 
 ## Process ##
 The data set was obtained from a non-profit Kaggle project that periodically scrapes Craigslist for every used vehicle entry within the United States. It is then uploaded to Kaggle and contains most all relevant information that Craigslist provides on car sales including columns like 'price', 'odometer', 'year', 'model', 'manufacturer', 'condition', 'title status', 'latitude/longitude', and 17 other categories. Data scraping was most recently performed in January 2021. In total, the original .csv file contains 458,213 vehicle listings.
-<img src="assets/img/DataCleanUp/original-data-columns.png" width="200">
-![original-data-columns](assets/img/DataCleanUp/original-data-columns.png)
+<img src="assets/img/DataCleanUp/original-data-columns.png" width="400">
 
 The following steps were performed on the data set:
 * Data Cleaning (Identifying Null Values, Filling-In Missing Values & Removing Outliers) Using pandas, NumPy, & seaborn
