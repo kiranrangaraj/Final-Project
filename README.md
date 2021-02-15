@@ -3,12 +3,12 @@
 ![website](assets/img/website.png)
 
 ## SUMMARY ##
-* *Overview* *
-* *Process* *
-* *Comparison - Machine Learning Model Performance* *
-* *Conclusions* *
-* *Sources* *
-* *Technologies Used* *
+* *Overview* 
+* *Process* 
+* *Comparison - Machine Learning Model Performance* 
+* *Conclusions* 
+* *Sources* 
+* *Technologies Used* 
 
 ## Overview ##
 The digital era has created a shift in the automotive industry towards contactless business models. This has allowed for the used car market to grow significantly larger than the new car market, primarily due to the wealth of information being offered to potential buyers online. In 2019, 40 million used cars were sold as compared to 17 million new vehicles. While pre-owned vehicles tend to come with much lower price tags, there's more to consider when choosing them, which makes it difficult to accurately predict what one should be paying.
