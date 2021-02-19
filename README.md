@@ -1,6 +1,6 @@
 # Final-Project:  Machine Learning Used Car Price Predictor
 ![website](assets/img/website.png)
-## Webpage: https://kiranrangaraj.github.io/Final-Project/
+## Website: https://kiranrangaraj.github.io/Final-Project/
 ---
 
 ## SUMMARY ##
