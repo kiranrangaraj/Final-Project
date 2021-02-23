@@ -100,4 +100,4 @@ Additionally, scrutinizing certain aspects of the data cleaning and preprocessin
 ---
 
 ## Author ##
-* Kiran Rangaraj - Data Analytics Bootcamp - Vanderbilt University - 2021
+Kiran Rangaraj - Data Analytics Bootcamp - Vanderbilt University - 2021
