@@ -1,6 +1,9 @@
-# Final-Project:  Machine Learning Used Car Price Predictor
+# Machine Learning Used Car Price Predictor
 ![website](assets/img/website.png)
-## Website: https://kiranrangaraj.github.io/Final-Project/
+
+<p align="center">
+  <a href="https://kiranrangaraj.github.io/Machine-Learning-Used-Car-Price-Predictor/">Visit Website</a>
+</p>
 ---
 
 ## SUMMARY ##
@@ -100,4 +103,4 @@ Additionally, scrutinizing certain aspects of the data cleaning and preprocessin
 ---
 
 ## Author ##
-Kiran Rangaraj - Data Analytics Bootcamp - Vanderbilt University - 2021
+Kiran Rangaraj - LinkedIn: [@Kiran Rangaraj](https://www.linkedin.com/in/kiranrangaraj/)
