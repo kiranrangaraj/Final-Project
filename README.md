@@ -58,7 +58,7 @@ The first three models were based in linear regression and were all found to be 
 
 Moving onto more complex algorithms that allowed for much larger decision trees and depth parameters is when higher accuracies of price predictions were achieved. Our data set contained 12 categorical variables and 4 numerical variables, which despite being encoded and scaled prior to utilization by the ML models, presented the need for a model that could be sensitive to the very broad importance value range for many different variables.
 
-The most suited algorithm was found to be the XGBoost ensemble-based ML model. The advantage of the XGBoost model is its scalable and accurate implementation of gradient boosting techniques and several advanced features for model tuning, computing environments and algorithm enhancement. XGBoody can perform the three main forms of gradient boosting (Gradient Boosting (GB), Stochastic GB and Regularized GB) and is robust enough to support fine tuning and addition of regularization parameters. The 91% accuracy model established here provides a jumping off point for further/future exploration.
+The most suited algorithm was found to be the XGBoost ensemble-based ML model. The advantage of the XGBoost model is its scalable and accurate implementation of gradient boosting techniques and several advanced features for model tuning, computing environments and algorithm enhancement. XGBoost can perform the three main forms of gradient boosting (Gradient Boosting (GB), Stochastic GB and Regularized GB) and is robust enough to support fine tuning and addition of regularization parameters. The 91% accuracy model established here provides a jumping off point for further/future exploration.
 
 ---
 
